@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer require --prefer-dist yii2assets/yii2-pdfjs ">=1.0"
+php composer require --prefer-dist dzhemile/yii2-pdfjs ">=1.0"
 ```
 
 or add
 
 ```
-"yii2assets/yii2-pdfjs": ">=1.0"
+"dzhemile/yii2-pdfjs": ">=1.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -32,7 +32,7 @@ The extension has been created as a module to enable access preview `pdf` file. 
 
 'modules'=>[
   'pdfjs' => [
-       'class' => '\yii2assets\pdfjs\Module',
+       'class' => '\dzhemile\pdfjs\Module',
    ],
 ],
 
@@ -51,7 +51,7 @@ Once the extension is installed, simply use it in your code by  :
 use yii\helpers\Url;
 ?>
 
-<?= \yii2assets\pdfjs\PdfJs::widget([
+<?= \dzhemile\pdfjs\PdfJs::widget([
   'url'=> Url::base().'/downloads/manualStart_up.pdf'
 ]); ?>
 ```
@@ -70,7 +70,7 @@ Modal::begin([
     'toggleButton' => ['label' => 'click me'],
 ]);
 
-echo \yii2assets\pdfjs\PdfJs::widget([
+echo \dzhemile\pdfjs\PdfJs::widget([
   'url' => Url::base().'/downloads/manualStart_up.pdf'
 ]);
 
@@ -95,7 +95,7 @@ Config Width & Height
 use yii\helpers\Url;
 ?>
 
-<?= \yii2assets\pdfjs\PdfJs::widget([
+<?= \dzhemile\pdfjs\PdfJs::widget([
   'width'=>'100%',
   'height'=> '500px',
   'url'=> Url::base().'/downloads/pdfjs.pdf'
@@ -112,7 +112,7 @@ Config disable toolbar buttons
 use yii\helpers\Url;
 ?>
 
-<?= \yii2assets\pdfjs\PdfJs::widget([
+<?= \dzhemile\pdfjs\PdfJs::widget([
   'url'=> Url::base().'/downloads/pdfjs.pdf',
   'buttons'=>[
     'presentationMode' => false,
@@ -135,7 +135,7 @@ Add Watermark text
 
 'modules'=>[
   'pdfjs' => [
-       'class' => '\yii2assets\pdfjs\Module',
+       'class' => '\dzhemile\pdfjs\Module',
        'waterMark'=>[
          'text'=>' Yii2 PDF.JS',
          'color'=> 'red',
