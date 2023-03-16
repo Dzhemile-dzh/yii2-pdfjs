@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2assets\pdfjs;
+namespace dzhemile\pdfjs;
 
 use yii\web\AssetBundle;
 use yii\web\View;
