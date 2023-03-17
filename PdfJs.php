@@ -24,10 +24,10 @@ class PdfJs extends \yii\base\Widget
 
     public function init()
     {
-        parent::init();
-        $buttons = Yii::$app->getModule('pdfjs')->buttons;
-        $this->buttons = array_merge($buttons,$this->buttons);
-        //$this->getView()->registerJsFile(Yii::$app->assetManager->getPublishedUrl('@dzhemile/pdfjs/assets').'/yii2-pdfjs.js');
+      parent::init();
+      $buttons = Yii::$app->getModule('pdfjs')->buttons;
+      $this->buttons = array_merge($buttons, $this->buttons);
+      PdfJsAsset::register($this->getView());
     }
 
     public function run()
