@@ -3,6 +3,12 @@ Yii2 PDFJS Change Log
 
 
 
+Version 1.1 August 14, 2023
+---------------------------
+
+- Updated PDFJS to version 3.9.179
+
+
 Version 1.0.2 July 22, 2016
 ---------------------
 
