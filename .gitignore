@@ -4,3 +4,4 @@
 [._]*.un~
 assets/build-1
 assets/web-1
+*:Zone.Identifier
