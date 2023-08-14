@@ -30,7 +30,7 @@ Adobe CMap resources are covered by their own copyright but the same license:
 
 See https://github.com/adobe-type-tools/cmap-resources
 -->
-<html dir="ltr" mozdisallowselectionprint moznomarginboxes>
+<html dir="ltr" mozdisallowselectionprint">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -44,7 +44,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     </script>
 <?php $this->head() ?>
 </head>
-<body tabindex="1" class="loadingInProgress">
+<body tabindex="1">
 <?php $this->beginBody() ?>
   <?=$content?>
 <?php $this->endBody() ?>

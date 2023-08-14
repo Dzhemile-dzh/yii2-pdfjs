@@ -1,0 +1,6 @@
+!.gitignore
+*~
+[._]*.sw[a-p]
+[._]*.un~
+assets/build-1
+assets/web-1
