@@ -14,10 +14,11 @@ class PdfJsAsset extends AssetBundle
     public $sourcePath = '@dzhemile/pdfjs/assets';
 
     public $js = [
-        'web/compatibility.js',
-        'web/l10n.js',
+        // 'web/compatibility.js',
+        // 'web/l10n.js',
         'build/pdf.js',
-        'web/debugger.js',
+        'build/pdf.worker.js',
+        // 'web/debugger.js',
         'web/viewer.js'
     ];
 
